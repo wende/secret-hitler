@@ -1,6 +1,6 @@
 /* eslint-disable */
 // ==UserScript==
-// @name         Socket Hitler
+// @name         Socket Wende
 // @namespace    http://tampermonkey.net/
 // @version      6.7
 // @description  This Machine Kills Fascists

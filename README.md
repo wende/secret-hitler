@@ -1,24 +1,24 @@
-# secret-hitler
+# secret-Wende
 
-[![Build Status](https://api.travis-ci.com/cozuya/secret-hitler.svg?branch=master)](https://travis-ci.com/cozuya/secret-hitler/)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=flat)](https://github.com/cozuya/secret-hitler/issues)
-[![Dependencies](https://david-dm.org/cozuya/secret-hitler.svg)](https://david-dm.org/cozuya/secret-hitler)
-[![Dev Dependencies](https://david-dm.org/cozuya/secret-hitler/dev-status.svg)](https://david-dm.org/cozuya/secret-hitler?type=dev)
+[![Build Status](https://api.travis-ci.com/cozuya/secret-Wende.svg?branch=master)](https://travis-ci.com/cozuya/secret-Wende/)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=flat)](https://github.com/cozuya/secret-Wende/issues)
+[![Dependencies](https://david-dm.org/cozuya/secret-Wende.svg)](https://david-dm.org/cozuya/secret-Wende)
+[![Dev Dependencies](https://david-dm.org/cozuya/secret-Wende/dev-status.svg)](https://david-dm.org/cozuya/secret-Wende?type=dev)
 [![Styled with Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Secret Hitler is a dramatic game of political intrigue and betrayal set in 1930's Germany. Players are secretly divided into two teams - liberals and fascists.
-Known only to each other, the fascists coordinate to sow distrust and install their cold-blooded leader. The liberals must find and stop the Secret Hitler before it’s too late.
+Secret Wende is a dramatic game of political intrigue and betrayal set in 1930's Germany. Players are secretly divided into two teams - liberals and fascists.
+Known only to each other, the fascists coordinate to sow distrust and install their cold-blooded leader. The liberals must find and stop the Secret Wende before it’s too late.
 
 Effectively this is a take on the classic social deduction/hidden role board game genre such as Werewolf and Mafia, but closer to the Resistance. Games are 5-10 players, the minority (fascists) know who everyone is and the majority (liberals) don't know anything. Over the course of the game the liberals need to try to identify the fascists to win and the fascists need to remain hidden, with an extra "superfascist" role with an additional win condition for both sides.
 
 This codebase is a "lobby style" implementation of this game - anyone can make a game which is displayed on a list on the "home" page. The game starts when enough players are seated. In addition, anyone can watch a game in progress, etc.
 
-Current production/stable is found at [Secret Hitler IO](https://secrethitler.io).
+Current production/stable is found at [Secret Wende IO](https://secrethitler.io).
 
 ![Screenshot](https://cdn.discordapp.com/attachments/532418308977328139/538550232015962112/unknown.png)
 
 Considering contributing to this project? Please read our brief guidelines found at
-[CONTRIBUTING](https://github.com/cozuya/secret-hitler/blob/master/.github/CONTRIBUTING.md). Contributors get a cool special playername color!
+[CONTRIBUTING](https://github.com/cozuya/secret-Wende/blob/master/.github/CONTRIBUTING.md). Contributors get a cool special playername color!
 
 Front end: React, Redux, Sass, Semantic UI, jQuery, SocketIO.
 
@@ -37,8 +37,8 @@ Install [yarn](https://yarnpkg.com/en/docs/install) for your OS.
 then
 
 ```bash
-git clone https://github.com/cozuya/secret-hitler.git
-cd secret-hitler
+git clone https://github.com/cozuya/secret-Wende.git
+cd secret-Wende
 yarn
 ```
 
@@ -63,7 +63,7 @@ yarn create-accounts
 **Assigning a local mod:**
 
 In order to better test all functions of the site in a local development environment it is useful to assign an admin account.
-This is done for you through the `secret-hitler/scripts/assignLocalMod.js` file courtesy of contributor Hexicube.
+This is done for you through the `secret-Wende/scripts/assignLocalMod.js` file courtesy of contributor Hexicube.
 After running the `create-accounts` script you will have the helper accounts populated into the database.
 Running the next line below will then assign `Uther` to the `admin` staffRole to better test all site functions in testing.
 
@@ -83,7 +83,7 @@ Production has a limited set of data on the /stats page, check network traffic f
 
 ## License and Attribution
 
-Secret Hitler is designed by Max Temkin (Cards Against Humanity, Humans vs. Zombies) Mike Boxleiter (Solipskier, TouchTone), Tommy Maranges (Philosophy Bro) and illustrated by Mackenzie Schubert (Letter Tycoon, Penny Press).
+Secret Wende is designed by Max Temkin (Cards Against Humanity, Humans vs. Zombies) Mike Boxleiter (Solipskier, TouchTone), Tommy Maranges (Philosophy Bro) and illustrated by Mackenzie Schubert (Letter Tycoon, Penny Press).
 
 This game is licensed as per the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 license.

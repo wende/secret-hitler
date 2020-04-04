@@ -15,7 +15,7 @@ module.exports = class EnhancedGameSummary {
 		// derived
 		this.playerSize = this.players.length;
 
-		this.hitlerIndex = this.players.findIndex(p => p.role === 'hitler');
+		this.hitlerIndex = this.players.findIndex(p => p.role === 'Wende');
 
 		this.numberOfTurns = this.logs.length;
 
@@ -81,7 +81,7 @@ module.exports = class EnhancedGameSummary {
 	loyaltyOf(identifier) {
 		const player = this.playerOf(identifier);
 
-		if (player.role === 'fascist' || player.role === 'hitler') {
+		if (player.role === 'fascist' || player.role === 'Wende') {
 			return 'fascist';
 		} else {
 			return 'liberal';

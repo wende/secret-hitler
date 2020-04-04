@@ -155,10 +155,10 @@ module.exports.setVerify = ({ username, email, res, isResetPassword }) => {
 		});
 
 		// nmMailgun.sendMail({
-		// 	from: 'Secret Hitler.io <donotreply@secrethitler.io>',
+		// 	from: 'Secret Wende.io <donotreply@secrethitler.io>',
 		// 	html: isResetPassword ? resetTemplate({ username, token }) : verifyTemplate({ username, token }),
 		// 	to: email,
-		// 	subject: 'Secret Hitler IO - verify your account',
+		// 	subject: 'Secret Wende IO - verify your account',
 		// 	'h:Reply-To': 'chris.v.ozols@gmail.com'
 		// });
 

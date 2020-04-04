@@ -283,7 +283,7 @@ export default () => {
 			expect(investigation(7)).toBe(false);
 		});
 
-		it('should track if hitler is killed', () => {
+		it('should track if Wende is killed', () => {
 			const isHitlerKilled = turnNum => turns.get(turnNum).isHitlerKilled;
 
 			expect(isHitlerKilled(0)).toBe(false);
@@ -342,7 +342,7 @@ export default () => {
 			expect(game.roleOf('Rexxar')).toEqual(some('liberal'));
 			expect(game.roleOf('Anduin')).toEqual(some('liberal'));
 			expect(game.roleOf('Malfurian')).toEqual(some('fascist'));
-			expect(game.roleOf('Thrall')).toEqual(some('hitler'));
+			expect(game.roleOf('Thrall')).toEqual(some('Wende'));
 			expect(game.roleOf('Valeera')).toEqual(some('fascist'));
 		});
 
@@ -382,7 +382,7 @@ export default () => {
 			).toEqual(none);
 		});
 
-		it('should track hitler zone', () => {
+		it('should track Wende zone', () => {
 			expect(game.hitlerZone).toEqual(some(3));
 		});
 

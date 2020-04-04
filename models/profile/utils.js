@@ -19,7 +19,7 @@ function profileDelta(username, game) {
 					.votesOf(username)
 					.value()
 					.slice(hz)
-			).filter(v => game.loyaltyOf(v.presidentId).value() === 'fascist' || game.roleOf(v.chancellorId).value() === 'hitler')
+			).filter(v => game.loyaltyOf(v.presidentId).value() === 'fascist' || game.roleOf(v.chancellorId).value() === 'Wende')
 		)
 		.valueOrElse(List());
 	const accurateVotes = votes.filterNot(v => {
@@ -27,7 +27,7 @@ function profileDelta(username, game) {
 		const presidentLoyalty = game.loyaltyOf(presidentId).value();
 		const chancellorRole = game.roleOf(chancellorId).value();
 
-		return ja && (presidentLoyalty === 'fascist' || chancellorRole === 'hitler');
+		return ja && (presidentLoyalty === 'fascist' || chancellorRole === 'Wende');
 	});
 	const shots = game.shotsOf(username).value();
 	const accurateShots = shots.filter(id => game.loyaltyOf(id).value() === 'fascist');

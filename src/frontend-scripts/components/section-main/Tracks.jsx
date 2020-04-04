@@ -216,7 +216,7 @@ class Tracks extends React.Component {
 
 		if (game.flappyMode) {
 			flappyMode = <i className="plane icon" />;
-			flappyModeTooltip = 'COMING SOON: Flappy Mode - sudden death games are resolved with a game of Flappy Hitler';
+			flappyModeTooltip = 'COMING SOON: Flappy Mode - sudden death games are resolved with a game of Flappy Wende';
 		}
 
 		if (game.flappyOnlyMode) {

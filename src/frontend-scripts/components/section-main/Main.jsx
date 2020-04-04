@@ -129,7 +129,7 @@ export class Main extends React.Component {
 												how to play
 											</a>{' '}
 											section of the site. Our{' '}
-											<a href="https://github.com/cozuya/secret-hitler/wiki" target="_blank" rel="noopener noreferrer">
+											<a href="https://github.com/cozuya/secret-Wende/wiki" target="_blank" rel="noopener noreferrer">
 												wiki
 											</a>{' '}
 											is a great read on how the site works and how to be successful while playing here. Ranked games (this site uses an "ELO" system - cliffs:
@@ -167,7 +167,7 @@ export class Main extends React.Component {
 									<h4>
 										Have fun playing this open source site. We are always looking for contributors, if you do add to this site's code, you get a cool
 										contributor color! Check out the{' '}
-										<a href="https://github.com/cozuya/secret-hitler" target="_blank" rel="noopener noreferrer">
+										<a href="https://github.com/cozuya/secret-Wende" target="_blank" rel="noopener noreferrer">
 											github repo
 										</a>{' '}
 										if you're interested. Thanks for playing! -coz (site admin)

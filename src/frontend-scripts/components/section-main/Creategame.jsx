@@ -512,7 +512,7 @@ export default class Creategame extends React.Component {
 				break;
 			case '2R1H':
 				this.setState({
-					gameName: '2 Rooms 1 Hitler',
+					gameName: '2 Rooms 1 Wende',
 					sliderValues: [7, 7],
 					experiencedmode: true,
 					disablechat: true,
@@ -1316,7 +1316,7 @@ export default class Creategame extends React.Component {
 				<div className="row">
 					<div className="seven wide column">
 						<div>
-							<h4 className="ui header">Hitler Zone</h4>
+							<h4 className="ui header">Wende Zone</h4>
 							<Range
 								min={1}
 								max={5}
@@ -1359,7 +1359,7 @@ export default class Creategame extends React.Component {
 							</div>
 						</div>
 						<div className="five wide column">
-							<h4 className="ui header">Hitler sees fascists</h4>
+							<h4 className="ui header">Wende sees fascists</h4>
 							<Switch
 								className="create-game-switch"
 								onChange={checked => {
@@ -1376,7 +1376,7 @@ export default class Creategame extends React.Component {
 							/>
 						</div>
 						<div className="five wide column">
-							<h4 className="ui header">Fascists can shoot hitler</h4>
+							<h4 className="ui header">Fascists can shoot Wende</h4>
 							<Switch
 								className="create-game-switch"
 								onChange={checked => {
@@ -1682,9 +1682,9 @@ export default class Creategame extends React.Component {
 								<i
 									className="info circle icon"
 									style={{ color: 'red', cursor: 'help' }}
-									title="If active, when players are on the last policy, roles are revealed and a 1 on 1 game of Flappy Hitler commences with control of the 'flappy' passed between team members at intervals."
+									title="If active, when players are on the last policy, roles are revealed and a 1 on 1 game of Flappy Wende commences with control of the 'flappy' passed between team members at intervals."
 								/>
-								COMING SOON: Resolve sudden death games with Flappy Hitler
+								COMING SOON: Resolve sudden death games with Flappy Wende
 							</h4>
 							<Switch
 								className="create-game-switch"

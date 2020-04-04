@@ -1507,7 +1507,7 @@ module.exports.handleUpdatedRemakeGame = (passport, game, data, socket) => {
 				chat: [
 					{
 						text: 'Game remake aborted, game creation is currently disabled.',
-						type: 'hitler'
+						type: 'Wende'
 					}
 				]
 			});
@@ -1711,7 +1711,7 @@ module.exports.handleUpdatedRemakeGame = (passport, game, data, socket) => {
 				chat: [
 					{
 						text: 'Due to the other tournament table voting for cancellation, this tournament has been cancelled.',
-						type: 'hitler'
+						type: 'Wende'
 					}
 				]
 			});
@@ -2243,7 +2243,7 @@ module.exports.handleAddNewGameChat = (socket, passport, data, game, modUserName
 						socket.emit('sendAlert', 'Unable to send ping.');
 						return;
 					}
-					io.sockets.sockets[affectedSocketId].emit('pingPlayer', 'Secret Hitler IO: A moderator has pinged you.');
+					io.sockets.sockets[affectedSocketId].emit('pingPlayer', 'Secret Wende IO: A moderator has pinged you.');
 				} catch (e) {
 					console.log(e, 'caught exception in ping chat');
 				}
@@ -2339,7 +2339,7 @@ module.exports.handleAddNewGameChat = (socket, passport, data, game, modUserName
 			}
 			io.sockets.sockets[affectedSocketId].emit(
 				'pingPlayer',
-				game.general.blindMode ? 'Secret Hitler IO: A player has pinged you.' : `Secret Hitler IO: Player ${data.userName} just pinged you.`
+				game.general.blindMode ? 'Secret Wende IO: A player has pinged you.' : `Secret Wende IO: Player ${data.userName} just pinged you.`
 			);
 
 			game.chats.push({
@@ -2760,7 +2760,7 @@ module.exports.handleModPeekVotes = (socket, passport, game, modUserName) => {
 		playersToCheckVotes.map(player => {
 			output += 'Seat ' + (playersToCheckVotes.indexOf(player) + 1) + ' - ';
 			if (player && player.role && player.role.cardName) {
-				if (player.role.cardName === 'hitler') {
+				if (player.role.cardName === 'Wende') {
 					output += player.role.cardName.substring(0, 1).toUpperCase() + player.role.cardName.substring(1) + '   - ';
 				} else {
 					output += player.role.cardName.substring(0, 1).toUpperCase() + player.role.cardName.substring(1) + ' - ';
@@ -4057,7 +4057,7 @@ module.exports.handleFlappyEvent = (data, game) => {
 			passedPylonCount: 0
 		};
 
-		game.general.status = 'FLAPPY HITLER: 0 - 0';
+		game.general.status = 'FLAPPY Wende: 0 - 0';
 		io.sockets.in(game.general.uid).emit('gameUpdate', game);
 
 		game.flappyState.pylonGenerator = setInterval(() => {
@@ -4075,13 +4075,13 @@ module.exports.handleFlappyEvent = (data, game) => {
 	if (data.type === 'collision') {
 		game.flappyState[`${data.team}Score`]++;
 		clearInterval(game.flappyState.pylonGenerator);
-		// game.general.status = 'FLAPPY HITLER: x - x';
+		// game.general.status = 'FLAPPY Wende: x - x';
 		// io.sockets.in(game.general.uid).emit('gameUpdate', game);
 	}
 
 	if (data.type === 'passedPylon') {
 		game.flappyState.passedPylonCount++;
-		game.general.status = `FLAPPY HITLER: ${game.flappyState.liberalScore} - ${game.flappyState.fascistScore} (${game.flappyState.passedPylonCount})`;
+		game.general.status = `FLAPPY Wende: ${game.flappyState.liberalScore} - ${game.flappyState.fascistScore} (${game.flappyState.passedPylonCount})`;
 
 		io.sockets.in(game.general.uid).emit('gameUpdate', game);
 	}

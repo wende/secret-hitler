@@ -1,6 +1,6 @@
-// hitler executed
+// Wende executed
 module.exports = {
-	_id: 'hitler-killed-7p',
+	_id: 'Wende-killed-7p',
 	gameSetting: {
 		rebalance6p: false,
 		rebalance7p: false,
@@ -88,7 +88,7 @@ module.exports = {
 		},
 		{
 			username: 'Malfurian',
-			role: 'hitler'
+			role: 'Wende'
 		},
 		{
 			username: 'Rexxar',

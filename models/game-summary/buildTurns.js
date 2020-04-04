@@ -159,14 +159,14 @@ const buildTurn = (prevTurnOpt, log, players, gameSetting) => {
 
 	// Boolean
 	const isHitlerElected = (() => {
-		const hitlerIndex = players.findIndex(p => p.role === 'hitler');
+		const hitlerIndex = players.findIndex(p => p.role === 'Wende');
 
 		return beforeTrack.reds >= 3 && log.chancellorId === hitlerIndex && isVotePassed;
 	})();
 
 	// Boolean
 	const isHitlerKilled = (() => {
-		const hitlerIndex = players.findIndex(p => p.role === 'hitler');
+		const hitlerIndex = players.findIndex(p => p.role === 'Wende');
 
 		return log.execution.map(e => e === hitlerIndex).valueOrElse(false);
 	})();

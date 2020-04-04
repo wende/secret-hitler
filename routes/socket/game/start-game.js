@@ -45,7 +45,7 @@ const beginGame = game => {
 
 	const roles = [
 		{
-			cardName: 'hitler',
+			cardName: 'Wende',
 			icon: 0,
 			team: 'fascist'
 		}
@@ -103,7 +103,7 @@ const beginGame = game => {
 						text: 'The game begins and you receive the '
 					},
 					{
-						text: player.role.cardName === 'hitler' ? 'hitler' : player.role.cardName,
+						text: player.role.cardName === 'Wende' ? 'Wende' : player.role.cardName,
 						type: player.role.cardName
 					},
 					{
@@ -139,7 +139,7 @@ const beginGame = game => {
 					text: ' is assigned the '
 				},
 				{
-					text: player.role.cardName === 'hitler' ? 'hitler' : player.role.cardName,
+					text: player.role.cardName === 'Wende' ? 'Wende' : player.role.cardName,
 					type: player.role.cardName
 				},
 				{
@@ -219,7 +219,7 @@ const beginGame = game => {
 	];
 
 	sendInProgressGameUpdate(game);
-	const hitlerPlayer = game.private.seatedPlayers.find(player => player.role.cardName === 'hitler');
+	const hitlerPlayer = game.private.seatedPlayers.find(player => player.role.cardName === 'Wende');
 
 	if (!hitlerPlayer) {
 		return;
@@ -324,8 +324,8 @@ const beginGame = game => {
 								text: 'You see that '
 							},
 							{
-								text: 'hitler',
-								type: 'hitler'
+								text: 'Wende',
+								type: 'Wende'
 							},
 							{
 								text: ' in this game is '
@@ -362,10 +362,10 @@ const beginGame = game => {
 						player.gameChats.push(chat);
 					}
 
-					player.playersState[seatedPlayers.indexOf(hitlerPlayer)].notificationStatus = 'hitler';
-					player.playersState[seatedPlayers.indexOf(hitlerPlayer)].nameStatus = 'hitler';
-				} else if (cardName === 'hitler') {
-					player.playersState[seatedPlayers.indexOf(player)].nameStatus = 'hitler';
+					player.playersState[seatedPlayers.indexOf(hitlerPlayer)].notificationStatus = 'Wende';
+					player.playersState[seatedPlayers.indexOf(hitlerPlayer)].nameStatus = 'Wende';
+				} else if (cardName === 'Wende') {
+					player.playersState[seatedPlayers.indexOf(player)].nameStatus = 'Wende';
 
 					if (customGameSettings.hitKnowsFas) {
 						if (customGameSettings.fascistCount == 1) {
@@ -536,7 +536,7 @@ const beginGame = game => {
 			continue;
 		}
 		if (process.env.NODE_ENV !== 'development') {
-			io.sockets.sockets[affectedSocketId].emit('pingPlayer', 'Secret Hitler IO: The game has started!');
+			io.sockets.sockets[affectedSocketId].emit('pingPlayer', 'Secret Wende IO: The game has started!');
 		}
 	}
 };

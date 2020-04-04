@@ -203,7 +203,7 @@ class Menu extends React.Component {
 			<div>
 				<div className="menu-container" style={{ zIndex: 9999 }}>
 					<section className={classes}>
-						<a href="/">{userInfo && userInfo.gameSettings && userInfo.gameSettings.safeForWork ? 'SH.io' : 'SECRET HITLER.io'}</a>
+						<a href="/">{userInfo && userInfo.gameSettings && userInfo.gameSettings.safeForWork ? 'SH.io' : 'SECRET Wende.io'}</a>
 						<div className="center-menu-links">
 							<span>
 								<a style={{ textDecoration: 'underline' }} target="_blank" href="/tou">
@@ -222,11 +222,11 @@ class Menu extends React.Component {
 									{`v${this.props.version.current.number}`}{' '}
 								</a>
 								|{' '}
-								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-hitler/issues">
+								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-Wende/issues">
 									Feedback
 								</a>{' '}
 								|{' '}
-								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-hitler/wiki">
+								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-Wende/wiki">
 									Wiki
 								</a>{' '}
 								|{' '}
@@ -317,11 +317,11 @@ class Menu extends React.Component {
 									{`v${this.props.version.current.number}`}{' '}
 								</a>
 								|{' '}
-								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-hitler/issues">
+								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-Wende/issues">
 									Feedback
 								</a>{' '}
 								|{' '}
-								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-hitler/wiki">
+								<a rel="noopener noreferrer" target="_blank" href="https://github.com/cozuya/secret-Wende/wiki">
 									Wiki
 								</a>{' '}
 								|{' '}

@@ -5,7 +5,7 @@ import { p5HitlerElected } from '../../mocks';
 export default () => {
 	const game = buildEnhancedGameSummary(p5HitlerElected);
 
-	describe('hitler elected, 5p', () => {
+	describe('Wende elected, 5p', () => {
 		it('Uther', () => {
 			const delta = profileDelta('Uther', game);
 

@@ -5,7 +5,7 @@ import { some, none } from 'option';
 import '../../matchers';
 
 export default () => {
-	describe('Hitler elected: 5p', () => {
+	describe('Wende elected: 5p', () => {
 		const game = buildEnhancedGameSummary(p5HitlerElected);
 		const { turns } = game;
 
@@ -17,7 +17,7 @@ export default () => {
 			})
 		);
 
-		it('last turn should have hitler elected', () => {
+		it('last turn should have Wende elected', () => {
 			expect(turns.last().isHitlerElected).toBe(true);
 			expect(game.winningTeam).toBe('fascist');
 		});
